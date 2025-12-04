@@ -1,13 +1,6 @@
 @define-color background-color #0f1015;
 @define-color foreground-color #c8c8c8;
-@define-color background-color-alt #1e2530;
-@define-color foreground-color-alt #808080;
 @define-color accent-color #72e5f2;
-
-@define-color cyan #289fbd;
-@define-color magenta #fb4e91;
-@define-color yellow #f9f871;
-@define-color green #0c7b3e;
 
 window {
   border: 1px solid @accent-color;
