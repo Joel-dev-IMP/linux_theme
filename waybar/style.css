@@ -1,4 +1,4 @@
-/* Colors by @THoehne */
+/* Thorbens Theme */
 @define-color background #1e222a;
 @define-color foreground #c8ccd4;
 @define-color black #15161e;
@@ -63,6 +63,12 @@ window#waybar {
 #mpd,
 #custom-weather,
 #custom-playerctl,
+#custom-mvg,
+#custom-poweroff-wrapper,
+#custom-power,
+#custom-quit,
+#custom-lock,
+#custom-reboot,
 #clock,
 #cpu,
 #memory,

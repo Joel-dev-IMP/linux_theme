@@ -6,7 +6,14 @@
   "margin": 0,
   "modules-left": ["hyprland/workspaces", "custom/mvg"],
   "modules-center": ["custom/clock"],
-  "modules-right": ["pulseaudio", "backlight", "network", "cpu", "battery"],
+  "modules-right": [
+    "pulseaudio",
+    "backlight",
+    "network",
+    "cpu",
+    "battery",
+    "group/poweroff"
+  ],
   "sway/mode": {
     "format": "<span style=\"italic\">{}</span>"
   },
@@ -39,6 +46,45 @@
     "format": "󰔟 {}",
     "exec": "uptime -p | sed 's/up //; s/ days/d/; s/ hours/h/; s/ minutes/m/'",
     "interval": 60
+  },
+  "group/poweroff": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false,
+      "click-to-reveal": true
+    },
+    "modules": [
+      "custom/poweroff-wrapper", // First element is the "group leader" and won't ever be hidden
+      "custom/power",
+      "custom/quit",
+      "custom/lock",
+      "custom/reboot"
+    ]
+  },
+  "custom/quit": {
+    "format": "󰗼",
+    "tooltip": false,
+    "on-click": "hyprctl dispatch exit"
+  },
+  "custom/lock": {
+    "format": "󰍁",
+    "tooltip": false,
+    "on-click": "swaylock"
+  },
+  "custom/reboot": {
+    "format": "󰜉",
+    "tooltip": false,
+    "on-click": "reboot"
+  },
+  "custom/power": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "shutdown now"
+  },
+  "custom/poweroff-wrapper": {
+    "format": " ",
+    "tooltip": false
   },
 
   "cpu": {
