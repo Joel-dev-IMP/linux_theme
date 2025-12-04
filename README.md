@@ -1,6 +1,6 @@
 # Linux Theme
 
-My Linux Theme for Hyprland
+My Linux Theme for Hyprland.
 
 ## Dependencies
 
@@ -8,6 +8,7 @@ Software:
 
 ```
 kitty
+waybar
 ```
 
 Python:
