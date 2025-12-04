@@ -4,21 +4,26 @@
   "height": 30,
   "spacing": 1,
   "margin": 0,
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["custom/clock"], //battery   //disk     // uptime      //updates        // systray
+  "modules-left": ["hyprland/workspaces", "custom/mvg"],
+  "modules-center": ["custom/clock"],
   "modules-right": ["pulseaudio", "backlight", "network", "cpu", "battery"],
-  // "modules-right": ["pulseaudio", "backlight","bluetooth", "network", "cpu", "memory", "temperature", "battery", "disk", "custom/uptime", "tray"],
   "sway/mode": {
     "format": "<span style=\"italic\">{}</span>"
   },
 
+  "custom/mvg": {
+    "format": " {}",
+    "exec": "~/.config/waybar/modules/mvg_departures.py",
+    "return-type": "json",
+    "interval": 30,
+    "tooltip": true
+  },
   "custom/clock": {
     "format": "󰥔   {}",
     "exec": "date '+%a, %d %b %H:%M'; echo ''$(date '+%a, %d %b %H:%M:%S')",
     "interval": 1,
     "tooltip": true,
-    "on-click": "https://calendar.google.com/calendar/u/0/r/year",
-    "on-click-right": "firefox https://calendar.google.com/calendar/u/0/r/year"
+    "on-click": "gnome-calendar"
   },
 
   "custom/playerctl": {
