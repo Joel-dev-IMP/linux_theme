@@ -9,6 +9,7 @@ Software:
 ```
 kitty
 waybar
+wofi
 ```
 
 Python:

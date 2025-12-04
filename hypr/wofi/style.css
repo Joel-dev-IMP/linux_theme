@@ -1,0 +1,41 @@
+@define-color background-color #0f1015;
+@define-color foreground-color #c8c8c8;
+@define-color background-color-alt #1e2530;
+@define-color foreground-color-alt #808080;
+@define-color accent-color #72e5f2;
+
+@define-color cyan #289fbd;
+@define-color magenta #fb4e91;
+@define-color yellow #f9f871;
+@define-color green #0c7b3e;
+
+window {
+  border: 1px solid @accent-color;
+  background-color: @background-color;
+  color: @foreground-color;
+}
+
+#outer-box {
+  padding: 1px;
+}
+
+#input {
+  margin: 0px;
+  padding: 4px;
+  background-color: @background-color;
+  border: 0px solid black;
+  color: @foreground-color;
+}
+
+#inner-box {
+  padding: 2px;
+}
+
+#text {
+  padding-left: 4px;
+}
+
+#expander-box {
+  background-color: @background-color;
+  color: @foreground-color;
+}

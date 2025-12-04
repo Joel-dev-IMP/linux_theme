@@ -1,0 +1,9 @@
+width=750
+mode=drun
+prompt=Start Application
+hide_scroll=true
+columns=2
+single_click=true
+allow_images=true
+image_size=20
+key_expand=Tab
